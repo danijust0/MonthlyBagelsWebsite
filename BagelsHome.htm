@@ -3,6 +3,8 @@
     <title>Bagels Home</title>
     <link rel="stylesheet" href="styles.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
@@ -13,9 +15,13 @@
 
 <!-- Top nav bar -->
     <div class="top-nav-bar">
-        <h2 class = "archives-button"> Archives </h2>     
+        <button class = "archives-button" onclick="document.location='archives.htm'">
+            <h2> Archives </h2>    
+        </button>
         <h2 class = "home"> Monthly Bagels </h2> 
-        <h2 class = "contact-button"> Contact </h2>
+        <button class = "contact-button" onclick="document.location='contact.htm'">
+            <h2> Contact </h2>
+        </button>
     </div>
 <hr>
 <!-- Title text -->
@@ -27,6 +33,7 @@
 
 <!-- About -->
     <div>
+        <img class="icon" src="Bagel and Cream Cheese.jpeg"> </div>
         <h2 style="line-height: 0.5;"> About </h2>
         <p style="text-align: center"> Monthly Bagels is our monthly newsletter! Subscribe to keep <br> with your friends and let them know what you’re up to </p>
     </div>
@@ -36,36 +43,36 @@
 
 <!-- How to & Latest Edition -->
 
-    <div class = "bottom-section">
-        <div class="latest">
+    <div class = "middle-section">
+        <div class="container">
             <h2 style="text-align: left;"> Read The Latest <br> Edition!</h2>
-            <embed class="embed" type="image/jpg" src="1st Edition Cover.jpg" width="300" height="200">
+            <embed class="embed" type="image/jpg" src="1st Edition Cover.jpg">
          </div>
      
-         <div class="how-to">
+         <div id = "left" class="container">
              <h3>How to Submit</h3>
-             <p>Simply email your entry to: <br>
-                 email@gmail.com</p>
+             <p>Simply email your entry to email@gmail.com</p>
              <h3>What to Submit</h3>
              <p>Anything digital! Photos, text, videos be creative!</p>
+             <h3>How Will I Receive Announcement About Latest Releases?</h3>
+             <p>Subscribe by filling out the form!</p>
+             <form action="emails.php">
+                <label for="email"> Email:</label>
+                <input type="text" id="email" name="email">
+                <input type="submit" value="Submit">
+            </form>
          </div>
     </div>
  
 <!-- Footer -->
 
     <div class="footer">
-        <div>
-            <h2> Monthly Bagels </h2> 
-            <h3> Contact </h3>
-        </div>
-        <div class="subscribe-form">
-            <h3> Subscribe Now!<h3>
-                <form action="emails.php">
-                    <label for="email"> Email:</label>
-                    <input type="text" id="email" name="email">
-                    <input type="submit" value="Submit">
-                </form>
-        </div>
+            <button>
+                <h1> Monthly Bagels </h1> 
+            </button>
+            <button>
+                <h2> Contact </h2>
+            </button>
     </div>
 
 
