@@ -61,6 +61,8 @@ hr {
     background-color: #c6b9ab;;
 }
 
+/* --------------------- Home Page ------------------------> */
+
 /* Title Section */
 
 .title-section{
@@ -80,30 +82,30 @@ hr {
 
 /* Middle Section */
 
-.middle-section{
+.middle-section {
     display: flex;
-    gap: 2%;
+    gap: 0.5%;
     flex-wrap: wrap;
     width: 80%;
     margin: 10%;
     margin-top: 1%;
 }
 
-.container {
+.middle-section-container {
     text-align: left;
-    width: 50%;
+    width: 30%;
 }
 
-#left {
-    width: 40%;
+#right {
+    width: 30%;
     padding-top: 12%;
 }
 
-.container > h2{
+.middle-section-container > h2{
     text-align: left;
     font-size: 2.60vw;
 }
-.container > h3{
+.middle-section-container > h3{
     font-size: 2.08vw;
     text-align: left;
 }
@@ -120,14 +122,15 @@ hr {
     display: flex;
     flex-wrap: wrap;
     background-color: #9CC2A4;
-    padding: 10%;
+    padding: 1%;
     margin: 0px;
     width: 100%;
-    height: 10%;
+    height: 15%;
 }
 
 .footer > button{
-    margin: 1%;
+    margin: 0.5%;
+    padding: 5px;
     border: 0;
     background-color: transparent;
 }
@@ -135,6 +138,36 @@ hr {
 .footer > button:hover{
     background-color: #7b9881;
 
+}
+
+/* --------------------- Contact ------------------------> */
+
+
+#intro{
+   text-align: left;
+   padding-left: 10%;
+   font-size: 5.00vw;
+}
+
+.main-content-box{
+    width: 80%;
+    gap: 5%;
+    display: flex;
+    padding-left: 10%;
+}
+.main-content-box > div{
+    padding: 0;
+    width: 40%
+}
+
+#contact-text{
+    padding-top: 10%;
+    font-size: 1.80vw;
+}
+
+.myFace{
+    border-radius: 50%;
+    width: 100%;
 }
 
 
